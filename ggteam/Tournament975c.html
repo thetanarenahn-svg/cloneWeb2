@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The partial view 'PartialGGteam/Tournament' was not found or no view engine supports the searched locations. The following locations were searched:<br>~/Views/Home/PartialGGteam/Tournament.cshtml<br>~/Views/Shared/PartialGGteam/Tournament.cshtml</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:pointer; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>The partial view 'PartialGGteam/Tournament' was not found or no view engine supports the searched locations. The following locations were searched:<br>~/Views/Home/PartialGGteam/Tournament.cshtml<br>~/Views/Shared/PartialGGteam/Tournament.cshtml</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+            <br><br>
+
+            <b> Exception Details: </b>System.InvalidOperationException: The partial view 'PartialGGteam/Tournament' was not found or no view engine supports the searched locations. The following locations were searched:<br>~/Views/Home/PartialGGteam/Tournament.cshtml<br>~/Views/Shared/PartialGGteam/Tournament.cshtml<br><br>
+
+            <b>Source Error:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+Line 9:  }
+Line 10: 
+<font color=red>Line 11: @{Html.RenderAction(&quot;RenderGGTeamPartialPage&quot;, new { page = ViewBag.Page });}
+</font>Line 12: @Html.Partial(&quot;~/Views/Shared/_BottomPartial.cshtml&quot;)
+Line 13: </pre>                      </code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b> Source File: </b> D:\Websites\ggpuke.com\Views\Home\ggteam.cshtml<b> &nbsp;&nbsp; Line: </b> 11
+            <br><br>
+
+            <b>Stack Trace:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+[InvalidOperationException: The partial view &#39;PartialGGteam/Tournament&#39; was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/PartialGGteam/Tournament.cshtml
+~/Views/Shared/PartialGGteam/Tournament.cshtml]
+   System.Web.Mvc.PartialViewResult.FindView(ControllerContext context) +485
+   System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context) +143
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +91
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +795
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +795
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +795
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) +81
+   System.Web.Mvc.Async.&lt;&gt;c__DisplayClass3_1.&lt;BeginInvokeAction&gt;b__5(IAsyncResult asyncResult) +188
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult) +38
+   System.Web.Mvc.&lt;&gt;c.&lt;BeginExecuteCore&gt;b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState) +29
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +73
+   System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult) +52
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +39
+   System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult) +38
+   System.Web.Mvc.&lt;&gt;c.&lt;BeginProcessRequest&gt;b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState) +43
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +73
+   System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult) +38
+   System.Web.Mvc.&lt;&gt;c__DisplayClass5_0.&lt;Wrap&gt;b__0() +18
+   System.Web.Mvc.ServerExecuteHttpHandlerWrapper.Wrap(Func`1 func) +29
+   System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride) +1889
+
+[HttpException (0x80004005): Error executing child request for handler &#39;System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper&#39;.]
+   System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride) +2533
+   System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage) +135
+   System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm) +34
+   System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter) +573
+   System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper htmlHelper, String actionName, Object routeValues) +60
+   ASP._Page_Views_Home_ggteam_cshtml.Execute() in D:\Websites\ggpuke.com\Views\Home\ggteam.cshtml:11
+   System.Web.WebPages.WebPageBase.ExecutePageHierarchy() +252
+   System.Web.Mvc.WebViewPage.ExecutePageHierarchy() +148
+   System.Web.WebPages.StartPage.ExecutePageHierarchy() +86
+   System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage) +107
+   System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context) +378
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +91
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +795
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +795
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +795
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult) +795
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) +81
+   System.Web.Mvc.Async.&lt;&gt;c__DisplayClass3_1.&lt;BeginInvokeAction&gt;b__5(IAsyncResult asyncResult) +188
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult) +38
+   System.Web.Mvc.&lt;&gt;c.&lt;BeginExecuteCore&gt;b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState) +29
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +73
+   System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult) +52
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +39
+   System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult) +38
+   System.Web.Mvc.&lt;&gt;c.&lt;BeginProcessRequest&gt;b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState) +43
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +73
+   System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult) +38
+   System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +431
+   System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step) +75
+   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +158
+</pre>                      </code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.8.4770.0
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[InvalidOperationException]: The partial view &#39;PartialGGteam/Tournament&#39; was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/PartialGGteam/Tournament.cshtml
+~/Views/Shared/PartialGGteam/Tournament.cshtml
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass5_0.<Wrap>b__0()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+[HttpException]: Error executing child request for handler &#39;System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper&#39;.
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   at System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper htmlHelper, String actionName, Object routeValues)
+   at ASP._Page_Views_Home_ggteam_cshtml.Execute() in D:\Websites\ggpuke.com\Views\Home\ggteam.cshtml:line 11
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &lt;customErrors mode="Off"/&gt;. Consider using &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; in production environments.-->
