@@ -1405,65 +1405,65 @@
             else {
                 //MOBILE MAIN BANNER SLIDER
                 $('.slick-carousel').slick({
-                    lazyLoad: 'ondemand',
-                    centerMode: true,
-                    centerPadding: '10px',
-                    slidesToShow: 3,
-                    dots: true,
-                    infinite: true,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    responsive: [
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 3
+                        lazyLoad: 'ondemand',
+                        centerMode: true,
+                        centerPadding: '10px',
+                        slidesToShow: 3,
+                        dots: true,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 3
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 1
+                                }
                             }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 1
-                            }
-                        }
-                    ]
-                });
+                        ]
+                    });
                 $('.slick-carousel-tournament').slick({
-                    lazyLoad: 'ondemand',
-                    centerMode: true,
-                    centerPadding: '10px',
-                    slidesToShow: 3,
-                    dots: true,
-                    infinite: true,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    responsive: [
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 3
+                        lazyLoad: 'ondemand',
+                        centerMode: true,
+                        centerPadding: '10px',
+                        slidesToShow: 3,
+                        dots: true,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 3
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 1
+                                }
                             }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 1
-                            }
-                        }
-                    ]
-                });
+                        ]
+                    });
             }
             //Article List
             $.getJSON('/content/blog.json?v=055626', function (emp) {
@@ -1580,7 +1580,7 @@
         function RunChangeValue() {
             $.ajax({
                 type: "GET",
-                url: "/GetGGData",
+                url: "GetGGData",
                 success: function (data) {
                     if (data == "") {
                         $(".infoDisplay").hide();
